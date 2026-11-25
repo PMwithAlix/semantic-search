@@ -1,0 +1,88 @@
+[
+  {
+    "label": "qwen3_embedding_8b",
+    "display_name": "Qwen3-Embedding-8B",
+    "model": null,
+    "status": "error",
+    "dimensions": null,
+    "elapsed_seconds": 6.35,
+    "candidates_tried": [
+      "qwen3-embedding-8b",
+      "qwen3-embedding-8b-instruct",
+      "Qwen/Qwen3-Embedding-8B",
+      "qwen/Qwen3-Embedding-8B"
+    ],
+    "output_file": "qwen3_embedding_8b.json"
+  },
+  {
+    "label": "voyage_4",
+    "display_name": "Voyage 4",
+    "model": null,
+    "status": "error",
+    "dimensions": null,
+    "elapsed_seconds": 4.5,
+    "candidates_tried": [
+      "voyage-4",
+      "voyage-4-large",
+      "voyage-4-lite"
+    ],
+    "output_file": "voyage_4.json"
+  },
+  {
+    "label": "voyage_3_5_large",
+    "display_name": "Voyage 3.5-large",
+    "model": null,
+    "status": "error",
+    "dimensions": null,
+    "elapsed_seconds": 4.81,
+    "candidates_tried": [
+      "voyage-3.5-large",
+      "voyage-3.5",
+      "voyage-large-3.5"
+    ],
+    "output_file": "voyage_3_5_large.json"
+  },
+  {
+    "label": "jina_embeddings_v5_text",
+    "display_name": "Jina Embeddings v5-text",
+    "model": null,
+    "status": "error",
+    "dimensions": null,
+    "elapsed_seconds": 31.56,
+    "candidates_tried": [
+      "jina-embeddings-v5-text-small",
+      "jina-embeddings-v5-text-nano",
+      "jina-embeddings-v5-text",
+      "jina-embeddings-v5-text-large"
+    ],
+    "output_file": "jina_embeddings_v5_text.json"
+  },
+  {
+    "label": "kalm_embedding_gemma3_12b",
+    "display_name": "KaLM-Embedding-Gemma3-12B",
+    "model": null,
+    "status": "error",
+    "dimensions": null,
+    "elapsed_seconds": 3.25,
+    "candidates_tried": [
+      "KaLM-Embedding-Gemma3-12B",
+      "kalm-embedding-gemma3-12b",
+      "KaLM-Embedding-Gemma3-12b"
+    ],
+    "output_file": "kalm_embedding_gemma3_12b.json"
+  },
+  {
+    "label": "bge_m3",
+    "display_name": "BGE-M3",
+    "model": null,
+    "status": "error",
+    "dimensions": null,
+    "elapsed_seconds": 26.45,
+    "candidates_tried": [
+      "bge-m3",
+      "BAAI/bge-m3",
+      "baai/bge-m3"
+    ],
+    "output_file": "bge_m3.json"
+  }
+]

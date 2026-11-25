@@ -1,0 +1,12 @@
+{
+  "display_name": "KaLM-Embedding-Gemma3-12B",
+  "status": "error",
+  "model_candidates": [
+    "KaLM-Embedding-Gemma3-12B",
+    "kalm-embedding-gemma3-12b",
+    "KaLM-Embedding-Gemma3-12b"
+  ],
+  "error": "{\n  \"error\": {\n    \"message\": \"Requested resource kalm-embedding-gemma3-12b does not exist. for more information check https://ava.al/limits . Please contact support at support@avalai.ir and include the request ID 01a09297-81d8-7843-a119-361c3f05f820 in your email if you believe this is an error.\",\n    \"type\": \"not_found\",\n    \"param\": null,\n    \"code\": \"resource_not_found\",\n    \"solution\": \"Please check https://ava.al/limits\",\n    \"request_id\": \"01a09297-81d8-7843-a119-361c3f05f820\"\n  }\n}",
+  "elapsed_seconds": 3.25,
+  "created_at": "2026-09-11T22:29:58.469647+00:00"
+}

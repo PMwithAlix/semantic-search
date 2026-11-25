@@ -1,0 +1,68 @@
+[
+  {
+    "label": "cohere_embed_v4",
+    "model": "embed-v-4-0",
+    "status": "ok",
+    "dimensions": 1536,
+    "elapsed_seconds": 5.76,
+    "usage": {
+      "completion_tokens": 0,
+      "prompt_tokens": 702,
+      "total_tokens": 702,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": null
+    },
+    "output_file": "cohere_embed_v4.json"
+  },
+  {
+    "label": "gemini_embedding",
+    "model": "gemini-embedding-2",
+    "status": "ok",
+    "dimensions": 3072,
+    "elapsed_seconds": 2.5,
+    "usage": {
+      "completion_tokens": 0,
+      "prompt_tokens": 377,
+      "total_tokens": 377,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0,
+        "text_tokens": 377,
+        "image_tokens": 0,
+        "video_tokens": 0
+      }
+    },
+    "output_file": "gemini_embedding.json"
+  },
+  {
+    "label": "text_embedding_v4",
+    "model": "text-embedding-v4",
+    "status": "ok",
+    "dimensions": 1024,
+    "elapsed_seconds": 2.98,
+    "usage": {
+      "prompt_tokens": 712,
+      "completion_tokens": 0,
+      "total_tokens": 712,
+      "prompt_tokens_details": {},
+      "completion_tokens_details": null
+    },
+    "output_file": "text_embedding_v4.json"
+  },
+  {
+    "label": "text_embedding_v3",
+    "model": "text-embedding-v3",
+    "status": "ok",
+    "dimensions": 1024,
+    "elapsed_seconds": 2.86,
+    "usage": {
+      "prompt_tokens": 311,
+      "completion_tokens": 0,
+      "total_tokens": 311,
+      "prompt_tokens_details": {},
+      "completion_tokens_details": null
+    },
+    "output_file": "text_embedding_v3.json"
+  }
+]

@@ -1,0 +1,26 @@
+﻿query_id,query,expected_ticket,expected_category,reason
+Q001,پول از حسابم کم شده ولی سفارش ثبت نشده,T-021,Payment,charged but order was not created
+Q002,هر بار لاگین می‌کنم دوباره منو می‌فرسته صفحه ورود,T-001,Authentication,login redirect loop
+Q003,بسته ارسال شده ولی کد رهگیری هیچ چیزی نشون نمی‌ده,T-061,Delivery Tracking,tracking info not updating
+Q004,پول سفارشی که لغو کردم هنوز بهم برنگشته,T-041,Refund,refund not received after cancellation
+Q005,پول رو دادم ولی خریدم تو حسابم نیست,T-022,Payment,paid but order missing in account
+Q006,ایمیل بازیابی رمز نمیاد,T-013,Password Reset,password reset email not received
+Q007,رسید بانک دارم ولی سفارش تو پنل نیست,T-035,Order,payment confirmed but no order in panel
+Q008,دو بار از کارت پول کم شده,T-024,Payment,duplicate charge same order
+Q009,مرسوله delivered زده ولی تحویل نگرفتم,T-068,Delivery Tracking,marked delivered but not received
+Q010,جستجو لپ‌تاپ میزنم چیزای بی‌ربط میاد,T-081,Search,irrelevant search results
+Q011,داشبورد فروش امروز صفر نشون میده,T-091,Dashboard,dashboard shows wrong sales data
+Q012,سبد خرید وب و موبایل یکی نیست,T-113,Mobile App,cart not synced between web and app
+Q013,export اکسل حروف فارسی خرابه,T-158,Data Export,Persian encoding broken in Excel export
+Q014,اشتراک cancel کردم هنوز پول میگیره,T-132,Subscription,cancelled subscription still charging
+Q015,موجودی هست ولی میگه تموم شده,T-072,Product,shows in stock but unavailable at checkout
+Q016,اتصال فروشگاه آنلاین قطع شده,T-161,Integration,e-commerce integration disconnected
+Q017,سایت خیلی کنده باز نمیشه,T-171,Performance,site loads very slowly
+Q018,نوتیف ایمیل سفارش نمیره,T-101,Notification,order email notifications not arriving
+Q019,ورود با SAML گیر میکنه,T-145,Access,SSO login redirect loop
+Q020,فایل export فقط سرستون داره,T-151,Data Export,CSV export empty except headers
+Q021,ERP موجودی با سایت فرق داره,T-167,Integration,ERP inventory mismatch with shop
+Q022,تمدید اشتراک انجام نشده,T-131,Subscription,subscription not renewed
+Q023,لینک reset password expire میشه,T-011,Password Reset,password reset link expired
+Q024,سفارش لغو کردم هنوز آماده‌سازی میشه,T-031,Order,cancelled order still processing
+Q025,جستجوی فارسی جواب نمیده,T-083,Search,Persian search returns no results

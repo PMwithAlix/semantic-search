@@ -1,0 +1,13 @@
+{
+  "display_name": "Qwen3-Embedding-8B",
+  "status": "error",
+  "model_candidates": [
+    "qwen3-embedding-8b",
+    "qwen3-embedding-8b-instruct",
+    "Qwen/Qwen3-Embedding-8B",
+    "qwen/Qwen3-Embedding-8B"
+  ],
+  "error": "{\n  \"error\": {\n    \"message\": \"Requested resource qwen3-embedding-8b does not exist. for more information check https://ava.al/limits . Please contact support at support@avalai.ir and include the request ID 01a09296-d69e-7b00-905d-85263bcbeb02 in your email if you believe this is an error.\",\n    \"type\": \"not_found\",\n    \"param\": null,\n    \"code\": \"resource_not_found\",\n    \"solution\": \"Please check https://ava.al/limits\",\n    \"request_id\": \"01a09296-d69e-7b00-905d-85263bcbeb02\"\n  }\n}",
+  "elapsed_seconds": 6.35,
+  "created_at": "2026-09-11T22:29:14.333740+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "display_name": "Jina Embeddings v5-text",
+  "status": "error",
+  "model_candidates": [
+    "jina-embeddings-v5-text-small",
+    "jina-embeddings-v5-text-nano",
+    "jina-embeddings-v5-text",
+    "jina-embeddings-v5-text-large"
+  ],
+  "error": "{\n  \"error\": {\n    \"message\": \"Requested resource jina-embeddings-v5-text-large does not exist. for more information check https://ava.al/limits . Please contact support at support@avalai.ir and include the request ID 01a09297-63f0-7043-9ebf-46a7d7fc6d4a in your email if you believe this is an error.\",\n    \"type\": \"not_found\",\n    \"param\": null,\n    \"code\": \"resource_not_found\",\n    \"solution\": \"Please check https://ava.al/limits\",\n    \"request_id\": \"01a09297-63f0-7043-9ebf-46a7d7fc6d4a\"\n  }\n}",
+  "elapsed_seconds": 31.56,
+  "created_at": "2026-09-11T22:29:55.212846+00:00"
+}

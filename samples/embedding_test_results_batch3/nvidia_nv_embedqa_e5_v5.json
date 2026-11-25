@@ -1,0 +1,8 @@
+{
+  "model": "nvidia_nim.nv-embedqa-e5-v5",
+  "display_name": "NVIDIA nv-embedqa-e5-v5",
+  "status": "error",
+  "http_status": 400,
+  "error": "{\n  \"error\": {\n    \"message\": \"Nvidia NIM error: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410, 'detail': \\\"The model 'nvidia/nv-embedqa-e5-v5' has reached its end of life on 2026-08-25T09:00:00Z and is no longer available Please contact support at support@avalai.ir and include the request ID 01a0929b-b39f-7313-ae10-ee63bce1b106 in your email if you believe this is an error.\",\n    \"type\": \"invalid_request\",\n    \"param\": null,\n    \"code\": \"invalid_request\",\n    \"request_id\": \"01a0929b-b39f-7313-ae10-ee63bce1b106\"\n  }\n}",
+  "created_at": "2026-09-11T22:34:33.094018+00:00"
+}

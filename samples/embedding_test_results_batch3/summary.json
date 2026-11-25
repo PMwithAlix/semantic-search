@@ -1,0 +1,64 @@
+[
+  {
+    "label": "text_embedding_3_large",
+    "display_name": "OpenAI text-embedding-3-large",
+    "model": "text-embedding-3-large",
+    "status": "ok",
+    "dimensions": 3072,
+    "elapsed_seconds": 2.5,
+    "usage": {
+      "completion_tokens": 0,
+      "prompt_tokens": 863,
+      "total_tokens": 863,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": null
+    },
+    "output_file": "text_embedding_3_large.json",
+    "similarity_file": "text_embedding_3_large_similarity.json"
+  },
+  {
+    "label": "gemini_embedding_001",
+    "display_name": "Google gemini-embedding-001",
+    "model": "gemini-embedding-001",
+    "status": "ok",
+    "dimensions": 3072,
+    "elapsed_seconds": 1.83,
+    "usage": {
+      "completion_tokens": 0,
+      "prompt_tokens": 0,
+      "total_tokens": 0,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": null
+    },
+    "output_file": "gemini_embedding_001.json",
+    "similarity_file": "gemini_embedding_001_similarity.json"
+  },
+  {
+    "label": "cohere_embed_multilingual_v3",
+    "display_name": "Cohere embed-multilingual-v3",
+    "model": "cohere.embed-multilingual-v3",
+    "status": "ok",
+    "dimensions": 1024,
+    "elapsed_seconds": 2.5,
+    "usage": {
+      "completion_tokens": 0,
+      "prompt_tokens": 863,
+      "total_tokens": 863,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": null
+    },
+    "output_file": "cohere_embed_multilingual_v3.json",
+    "similarity_file": "cohere_embed_multilingual_v3_similarity.json"
+  },
+  {
+    "label": "nvidia_nv_embedqa_e5_v5",
+    "display_name": "NVIDIA nv-embedqa-e5-v5",
+    "model": "nvidia_nim.nv-embedqa-e5-v5",
+    "status": "error",
+    "dimensions": null,
+    "elapsed_seconds": null,
+    "usage": null,
+    "output_file": "nvidia_nv_embedqa_e5_v5.json",
+    "similarity_file": null
+  }
+]

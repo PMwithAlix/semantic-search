@@ -1,0 +1,18 @@
+[
+  {
+    "model": "embed-v-4-0",
+    "file": "cohere_embed_v4_similarity.json"
+  },
+  {
+    "model": "gemini-embedding-2",
+    "file": "gemini_embedding_similarity.json"
+  },
+  {
+    "model": "text-embedding-v3",
+    "file": "text_embedding_v3_similarity.json"
+  },
+  {
+    "model": "text-embedding-v4",
+    "file": "text_embedding_v4_similarity.json"
+  }
+]

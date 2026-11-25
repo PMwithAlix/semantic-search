@@ -1,0 +1,60 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: semantic-search-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: semantic_search
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d semantic_search"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: semantic-search-api
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://postgres:postgres@db:5432/semantic_search
+      UPLOAD_DIR: /app/uploads
+      EMBEDDING_MODELS_PATH: /app/embedding_models.json
+      EMBEDDING_BATCH_SIZE: "10"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./embedding_models.json:/app/embedding_models.json:ro
+    depends_on:
+      db:
+        condition: service_healthy
+
+  worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.worker
+    container_name: semantic-search-worker
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://postgres:postgres@db:5432/semantic_search
+      UPLOAD_DIR: /app/uploads
+      EMBEDDING_MODELS_PATH: /app/embedding_models.json
+      EMBEDDING_BATCH_SIZE: "10"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./embedding_models.json:/app/embedding_models.json:ro
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:

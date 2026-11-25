@@ -1,0 +1,12 @@
+{
+  "display_name": "BGE-M3",
+  "status": "error",
+  "model_candidates": [
+    "bge-m3",
+    "BAAI/bge-m3",
+    "baai/bge-m3"
+  ],
+  "error": "{\n  \"error\": {\n    \"message\": \"Requested resource bge-m3 does not exist. for more information check https://ava.al/limits . Please contact support at support@avalai.ir and include the request ID 01a09297-d98f-7592-9b24-673335b9dd8b in your email if you believe this is an error.\",\n    \"type\": \"not_found\",\n    \"param\": null,\n    \"code\": \"resource_not_found\",\n    \"solution\": \"Please check https://ava.al/limits\",\n    \"request_id\": \"01a09297-d98f-7592-9b24-673335b9dd8b\"\n  }\n}",
+  "elapsed_seconds": 26.45,
+  "created_at": "2026-09-11T22:30:24.919295+00:00"
+}

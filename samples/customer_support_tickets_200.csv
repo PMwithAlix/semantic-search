@@ -1,0 +1,201 @@
+﻿ticket_id,title,description,category,product,priority,status,created_at,customer_type,resolution
+T-001,بعد از ورود دوباره به صفحه لاگین برمی‌گردم,سلام. بعد از وارد کردن رمز عبور، کاربر دوباره به صفحه ورود منتقل می‌شود. چند بار امتحان کردم و از مرورگرهای مختلف هم تست کردم.,Authentication,Web Platform,High,Resolved,2026-01-06 09:55,Individual,کوکی سشن منقضی شده بود؛ تنظیمات احراز هویت اصلاح شد.
+T-002,لاگین می‌کنم ولی وارد نمیشه,هرچی رمز میزنم وارد حساب نمیشه. اطلاعات درسته ولی مجدد فرم ورود میاد.,Authentication,Web Platform,High,Closed,2026-01-07 09:05,Individual,مشکل از افزونه مرورگر بود؛ پس از غیرفعال‌سازی ورود انجام شد.
+T-003,اطلاعات ورود درست است اما سیستم اجازه ورود نمی‌دهد,کاربر Enterprise با ایمیل سازمانی ثبت‌نام کرده. رمز را چند بار تغییر داده‌ام اما هنوز پیام «اطلاعات نامعتبر» نمایش داده می‌شود.,Authentication,Customer Portal,High,In Progress,2026-01-07 15:45,Enterprise,همگام‌سازی با Active Directory در حال بررسی است.
+T-004,حسابم باز نمیشه و دوباره فرم ورود نمایش داده میشه,از دیروز نمیتونم وارد پنل بشم. لاگین می‌کنم ولی بلافاصله برمی‌گرده صفحه ورود.,Authentication,Dashboard,High,Resolved,2026-01-10 17:40,Business,توکن JWT با تنظیمات جدید سازگار نبود؛ رفع شد.
+T-005,ورود با گوگل کار نمی‌کند,روی دکمه «ورود با Google» کلیک می‌کنم اما بعد از انتخاب حساب، خطای «دسترسی رد شد» می‌گیرم.,Authentication,Web Platform,Medium,Open,2026-01-11 16:15,Individual,در انتظار بررسی OAuth callback.
+T-006,کد دو مرحله‌ای ارسال نمی‌شود,وقتی کد OTP درخواست می‌کنم، پیامک یا ایمیلی دریافت نمی‌کنم. شماره و ایمیل را هم چک کردم.,Authentication,Mobile App,High,In Progress,2026-01-12 09:15,Individual,ارسال SMS از سمت ارائه‌دهنده قطع بود.
+T-007,نشست من بدون دلیل منقضی می‌شود,هر ۵ دقیقه از حساب خارج می‌شوم حتی وقتی فعال کار می‌کنم. خیلی آزاردهنده است.,Authentication,Dashboard,Medium,Resolved,2026-01-16 08:25,Business,مدت timeout سشن از ۵ به ۳۰ دقیقه افزایش یافت.
+T-008,خطای 403 بعد از ورود موفق,با یوزر و پس درست وارد می‌شوم اما صفحه بعدی خطای 403 Forbidden نشان می‌دهد.,Authentication,Customer Portal,Critical,Resolved,2026-01-16 18:15,Enterprise,نقش کاربر در سیستم RBAC به‌روزرسانی شد.
+T-009,نمیتونم با ایمیل قدیمی وارد بشم,ایمیلم رو عوض کردم ولی هنوز با ایمیل قبلی باید لاگین کنم؟ سیستم گیج‌کننده‌ست.,Authentication,Web Platform,Medium,Closed,2026-01-17 17:35,Individual,راهنمای تغییر ایمیل اصلی ارسال شد.
+T-010,ورود از موبایل و وب همزمان مشکل دارد,روی گوشی وارد می‌شم ولی روی لپ‌تاپ همزمان session قطع می‌شه.,Authentication,Mobile App,Medium,Open,2026-01-17 18:40,Individual,محدودیت single-session در حال بررسی.
+T-011,لینک بازیابی رمز کار نمی‌کند,ایمیل بازیابی رمز را دریافت کردم اما با کلیک روی لینک پیام «لینک منقضی شده» می‌آید.,Password Reset,Web Platform,High,Resolved,2026-01-18 18:50,Individual,لینک بازیابی مجدداً ارسال شد.
+T-012,رمز جدید قبول نمی‌شود,طبق قوانین رمز جدید وارد کردم ولی سیستم می‌گه «رمز ضعیف است» در حالی که همه شرایط را دارد.,Password Reset,Customer Portal,Medium,Closed,2026-01-19 16:05,Business,اعتبارسنجی regex اصلاح شد.
+T-013,ایمیل reset password نمیاد,سه بار درخواست فراموشی رمز دادم ولی هیچ ایمیلی نیومده. اسپم هم چک کردم.,Password Reset,Web Platform,High,Resolved,2026-01-22 08:25,Individual,ایمیل در لیست bounce بود؛ آدرس اصلاح شد.
+T-014,بعد از تغییر رمز هنوز با رمز قدیمی وارد می‌شوم,رمز را عوض کردم و پیام موفقیت دیدم ولی با رمز جدید خطا می‌گیرم.,Password Reset,Dashboard,High,In Progress,2026-01-23 16:15,Enterprise,کش احراز هویت در حال پاک‌سازی.
+T-015,کد بازیابی پیامکی اشتباه است,کد ۶ رقمی که پیامک شده با چیزی که سایت می‌خواد فرق داره.,Password Reset,Mobile App,High,Resolved,2026-01-23 17:50,Individual,مشکل تأخیر همگام‌سازی OTP برطرف شد.
+T-016,فراموشی رمز برای حساب سازمانی,کارمند جدید نمی‌تونه رمزش رو ریست کنه چون ایمیل سازمانی فیلتر شده.,Password Reset,Customer Portal,Medium,Open,2026-01-26 19:35,Enterprise,دامنه ایمیل به whitelist اضافه شد.
+T-017,صفحه بازیابی رمز سفید می‌ماند,روی «فراموشی رمز» کلیک می‌کنم و صفحه خالی لود می‌شه.,Password Reset,Web Platform,Medium,Resolved,2026-01-29 09:50,Individual,خطای JavaScript در فرم بازیابی رفع شد.
+T-018,رمز قبول شد ولی دوباره lock شد,بعد از ریست رمز، دو بار اشتباه زدم و حساب lock شد. راهی برای unlock نیست؟,Password Reset,Web Platform,High,Closed,2026-01-29 13:25,Business,حساب از طرف پشتیبانی باز شد.
+T-019,لینک reset در موبایل باز نمی‌شود,لینک بازیابی روی گوشی سامسونگ من Safari error می‌ده.,Password Reset,Mobile App,Low,Resolved,2026-01-31 09:30,Individual,لینک deep link برای موبایل اصلاح شد.
+T-020,سؤال امنیتی جوابش را فراموش کردم,بدون سؤال امنیتی نمی‌تونم رمز رو بازیابی کنم. راه دیگه‌ای هست؟,Password Reset,Customer Portal,Medium,In Progress,2026-01-31 13:40,Individual,تأیید هویت با مدارک در جریان.
+T-021,مبلغ کسر شد ولی سفارش ثبت نشده,"مبلغ از حساب مشتری کسر شده اما سفارش در سیستم ایجاد نشده است. مبلغ ۲,۴۵۰,۰۰۰ تومان.",Payment,Checkout,Critical,In Progress,2026-01-31 18:55,Individual,درگاه پرداخت بررسی و تراکنش در صف بازگشت.
+T-022,پرداخت موفق بوده ولی سفارش دیده نمی‌شود,رسید پرداخت دارم و بانک هم تأیید کرده ولی در پنل هیچ سفارشی ثبت نشده.,Payment,Checkout,Critical,Resolved,2026-02-01 14:00,Business,Webhook درگاه با تأخیر پردازش شد؛ سفارش دستی ایجاد شد.
+T-023,درخواست پرداخت خطا داد و پول کسر نشده,موقع پرداخت خطای timeout داد. لطفاً بررسی کنید پول از حسابم کم نشده باشه.,Payment,Checkout,High,Closed,2026-02-01 17:30,Individual,تراکنش ناموفق بود؛ مبلغی کسر نشده.
+T-024,پرداخت دو بار انجام شده,برای یک سفارش دو بار از کارت من پول کم شده. شماره پیگیری هر دو یکیه.,Payment,Checkout,Critical,Resolved,2026-02-02 12:30,Individual,یکی از تراکنش‌های تکراری استرداد شد.
+T-025,درگاه پرداخت باز نمی‌شود,روی پرداخت می‌زنم صفحه درگاه سفید می‌مونه. از Chrome و Firefox تست کردم.,Payment,Checkout,High,Open,2026-02-02 13:20,Individual,مشکل SSL درگاه در حال پیگیری.
+T-026,خطای «موجودی کافی نیست» با وجود موجودی,کارت بانکی موجودی دارد ولی سایت می‌گه موجودی کافی نیست.,Payment,Checkout,High,Resolved,2026-02-03 09:55,Business,محدودیت روزانه بانک بود؛ مشتری مطلع شد.
+T-027,پرداخت با کیف پول انجام نمی‌شود,موجودی کیف پول کافیه ولی دکمه پرداخت غیرفعاله.,Payment,Checkout,Medium,In Progress,2026-02-03 14:45,Individual,باگ محاسبه موجودی در حال رفع.
+T-028,فاکتور پرداخت دانلود نمی‌شود,پرداخت انجام شده ولی PDF فاکتور خطای 500 می‌ده.,Payment,Customer Portal,Low,Resolved,2026-02-04 17:15,Enterprise,سرویس تولید PDF ری‌استارت شد.
+T-029,مبلغ نهایی با سبد خرید فرق دارد,قبل پرداخت ۱.۲ میلیون بود، موقع پرداخت ۱.۴ میلیون شد.,Payment,Checkout,High,Closed,2026-02-05 14:05,Individual,مالیات محلی به مبلغ اضافه شده بود؛ توضیح داده شد.
+T-030,پرداخت اقساطی در دسترس نیست,گزینه پرداخت اقساطی برای سفارش من نمایش داده نمی‌شود.,Payment,Checkout,Medium,Open,2026-02-09 11:55,Business,سقف اقساط برای این مبلغ فعال نیست.
+T-031,سفارش لغو شده ولی هنوز در حال آماده‌سازی است,سفارش را لغو کردم و تأیید لغو گرفتم ولی وضعیت هنوز «در حال پردازش» است.,Order,Customer Portal,High,Resolved,2026-02-13 11:20,Individual,وضعیت سفارش با انبار همگام شد.
+T-032,نمی‌توانم سفارش را ویرایش کنم,آدرس اشتباه وارد کردم. امکان تغییر آدرس قبل ارسال وجود دارد؟,Order,Web Platform,Medium,Closed,2026-02-13 18:10,Individual,آدرس قبل از ارسال اصلاح شد.
+T-033,سفارش تکراری ثبت شده,یک بار کلیک کردم ولی دو سفارش با شماره‌های مختلف ایجاد شده.,Order,Checkout,High,In Progress,2026-02-14 15:00,Business,یکی از سفارش‌های تکراری لغو شد.
+T-034,تاریخ تحویل اشتباه نمایش داده می‌شود,موقع ثبت سفارش ۳ روزه نوشته بود، الان ۱۰ روزه شده.,Order,Customer Portal,Medium,Open,2026-02-16 12:40,Individual,تأخیر انبار باعث تغییر ETA شده.
+T-035,سفارش در لیست نیست,پرداخت کردم ولی توی سفارش‌های من چیزی نیست.,Order,Customer Portal,Critical,Resolved,2026-02-16 14:35,Individual,سفارش پس از همگام‌سازی درگاه نمایش داده شد.
+T-036,امکان افزودن یادداشت به سفارش نیست,می‌خوام به پیک بگم زنگ نزنه ولی فیلد یادداشت وجود نداره.,Order,Web Platform,Low,Resolved,2026-02-17 16:55,Individual,یادداشت در سیستم انبار ثبت شد.
+T-037,سفارش عمده نیاز به تأیید دارد,سفارش B2B ما ۴۸ ساعته در وضعیت «در انتظار تأیید» مانده.,Order,Customer Portal,High,In Progress,2026-02-19 19:25,Enterprise,تأیید مدیر فروش در انتظار.
+T-038,کد تخفیف روی سفارش اعمال نشده,کد WINTER20 را زدم ولی در فاکتور نهایی تخفیف نیست.,Order,Checkout,Medium,Closed,2026-02-20 12:35,Individual,کد منقضی شده بود؛ کد جایگزین ارسال شد.
+T-039,سفارش به حساب دیگری رفته,با اکانت A سفارش دادم ولی در اکانت B نمایش داده می‌شود.,Order,Web Platform,High,Resolved,2026-02-22 12:00,Business,سفارش به حساب صحیح منتقل شد.
+T-040,حداقل مبلغ سفارش مانع checkout است,سبد ۴۹۰ هزار تومان است ولی حداقل ۵۰۰ هزار می‌خواد. یک محصول کوچک اضافه نمی‌شه.,Order,Checkout,Low,Open,2026-02-23 11:40,Individual,محدودیت حداقل سفارش در حال بررسی.
+T-041,درخواست استرداد دادم ولی پول برنگشته,مشتری درخواست استرداد وجه داده اما هنوز مبلغ به حساب او بازنگشته است. ۱۸ روز گذشته.,Refund,Customer Portal,Critical,In Progress,2026-02-23 14:25,Individual,استرداد در صف بانکی؛ ۳-۵ روز کاری.
+T-042,مبلغ استرداد کمتر از پرداختی است,کل مبلغ سفارش ۳ میلیون بود، فقط ۲.۵ میلیون برگشت.,Refund,Customer Portal,High,Open,2026-02-23 19:05,Business,کسر هزینه ارسال طبق سیاست بازگشت.
+T-043,استرداد به کارت قدیمی انجام شده,کارتم عوض شده ولی پول به کارت قبلی رفته.,Refund,Customer Portal,High,Resolved,2026-02-25 15:25,Individual,استرداد به کارت جدید از طریق بانک پیگیری شد.
+T-044,دکمه درخواست بازگشت وجه کار نمی‌کند,روی «درخواست استرداد» کلیک می‌کنم هیچ اتفاقی نمی‌افته.,Refund,Web Platform,Medium,Closed,2026-02-25 19:20,Individual,درخواست دستی از طرف پشتیبانی ثبت شد.
+T-045,وضعیت استرداد «رد شده» بدون دلیل,درخواست بازگشت وجه رد شده ولی دلیلی ذکر نشده.,Refund,Customer Portal,High,In Progress,2026-02-26 18:55,Enterprise,بررسی مدارک بازگشت کالا.
+T-046,پول سفارش لغوشده هنوز نیومده,هفته پیش لغو کردم، نوشته استرداد شده ولی تو حسابم نیست.,Refund,Customer Portal,Critical,Resolved,2026-02-28 16:10,Individual,تأخیر بانکی؛ مبلغ ۲ روز بعد واریز شد.
+T-047,استرداد جزئی درخواست کردم,فقط یکی از ۳ محصول را برگشت می‌زنم. امکانش هست؟,Refund,Customer Portal,Medium,Closed,2026-02-28 17:55,Business,استرداد جزئی پشتیبانی می‌شود؛ راهنما ارسال شد.
+T-048,رسید استرداد دریافت نکردم,می‌گن پول برگشته ولی ایمیل یا SMS تأیید ندارم.,Refund,Customer Portal,Low,Resolved,2026-03-01 08:45,Individual,رسید استرداد مجدداً ارسال شد.
+T-049,استرداد به کیف پول انجام نشده,گزینه استرداد به wallet را زدم ولی موجودی اضافه نشده.,Refund,Customer Portal,High,Open,2026-03-03 08:50,Individual,تراکنش wallet در حال بررسی.
+T-050,زمان استرداد خیلی طولانی است,نوشته ۷-۱۴ روز کاری. نمی‌شه سریع‌تر؟,Refund,Customer Portal,Medium,Closed,2026-03-03 09:25,Enterprise,زمان استرداد وابسته به چرخه بانکی است.
+T-051,آدرس ارسال اشتباه ثبت شده,پیک به آدرس قبلی رفته. آدرس جدید را قبل ارسال فرستاده بودم.,Shipping,Customer Portal,High,Resolved,2026-03-03 10:55,Individual,ارسال مجدد به آدرس صحیح.
+T-052,هزینه ارسال غیرمنتظره اضافه شد,موقع checkout رایگان بود، فاکتور نهایی ۴۵ هزار هزینه ارسال دارد.,Shipping,Checkout,Medium,Closed,2026-03-04 08:25,Individual,منطقه دور از شهر under zone جدید.
+T-053,ارسال express در دسترس نیست,برای شهر ما فقط ارسال عادی نمایش داده می‌شود.,Shipping,Web Platform,Low,Open,2026-03-04 17:15,Business,ارسال express به این شهر به زودی.
+T-054,مرسوله آسیب دیده رسیده,بسته باز شده و محصول خراب است. عکس هم پیوست کردم.,Shipping,Customer Portal,High,In Progress,2026-03-05 16:45,Individual,درخواست تعویض در حال پردازش.
+T-055,ارسال به صندوق پستی ممکن نیست,فقط آدرس منزل قبول می‌کنه، صندوق پستی نمی‌ذاره.,Shipping,Checkout,Low,Resolved,2026-03-07 08:15,Individual,محدودیت از طرف پست.
+T-056,زمان‌بندی تحویل انتخاب نمی‌شود,می‌خوام شنبه تحویل بگیرم ولی تقویم خالیه.,Shipping,Web Platform,Medium,Closed,2026-03-08 10:35,Individual,ظرفیت تحویل شنبه تکمیل شده.
+T-057,چند بسته برای یک سفارش,یک سفارش ۵ بسته جداگانه شده. پیگیری سخت شده.,Shipping,Customer Portal,Medium,Open,2026-03-09 09:35,Enterprise,تجمیع ارسال برای سفارش‌های بعدی.
+T-058,پیک بدون هماهنگی آمده,کسی خونه نبود و بسته برگشت خورد.,Shipping,Customer Portal,High,Resolved,2026-03-13 10:25,Individual,هماهنگی مجدد ارسال.
+T-059,محدودیت ارسال برای کالای حجیم,یخچال سفارش دادم ولی می‌گه به شهر ما ارسال نمی‌شه.,Shipping,Checkout,Medium,In Progress,2026-03-13 16:10,Business,هماهنگی با حمل‌ونقل سنگین.
+T-060,برچسب ارسال در پنل نمایش داده نمی‌شود,برای مرجوعی نیاز به برچسب دارم ولی دانلود نمی‌شه.,Shipping,Customer Portal,Low,Resolved,2026-03-13 20:35,Individual,برچسب از طریق ایمیل ارسال شد.
+T-061,کد رهگیری چیزی نشون نمیده,شماره پیگیری ایجاد شده اما اطلاعات مرسوله چند روز است به‌روزرسانی نشده.,Delivery Tracking,Customer Portal,Medium,In Progress,2026-03-14 10:55,Individual,مشکل از سرویس رهگیری شرکت حمل‌ونقل بود.
+T-062,بسته ارسال شده ولی وضعیت «در انبار» است,۳ روز پیش ارسال شده ولی هنوز در پنل نوشته در انبار.,Delivery Tracking,Customer Portal,High,Resolved,2026-03-17 09:20,Business,وضعیت با API پست همگام شد.
+T-063,لینک رهگیری خطا می‌دهد,روی لینک پیگیری کلیک می‌کنم صفحه 404 می‌آید.,Delivery Tracking,Web Platform,Medium,Closed,2026-03-17 10:15,Individual,URL رهگیری اصلاح شد.
+T-064,موقعیت GPS پیک نمایش داده نمی‌شود,گزینه live tracking کار نمی‌کنه.,Delivery Tracking,Mobile App,Low,Open,2026-03-17 18:35,Individual,فقط برای ارسال same-day فعال است.
+T-065,تاریخ تحویل واقعی با اعلام‌شده فرق دارد,گفته بود فردا می‌رسه، یک هفته گذشته.,Delivery Tracking,Customer Portal,High,In Progress,2026-03-18 17:15,Individual,تأخیر انبار و پست.
+T-066,SMS تحویل نیامده,بسته رسیده ولی پیامکی دریافت نکردم.,Delivery Tracking,Mobile App,Low,Resolved,2026-03-19 14:55,Individual,SMS از سمت اپراتور تأخیر داشت.
+T-067,کد رهگیری اشتباه در ایمیل,کد توی ایمیل با کد سایت فرق داره.,Delivery Tracking,Customer Portal,Medium,Resolved,2026-03-22 18:40,Business,ایمیل اصلاحی ارسال شد.
+T-068,مرسوله delivered نشون میده ولی نرسیده,نوشته تحویل داده شده ولی من چیزی دریافت نکردم.,Delivery Tracking,Customer Portal,Critical,Open,2026-03-23 17:50,Individual,تحقیق با پست در جریان.
+T-069,چند کد رهگیری برای یک سفارش,کدوم رو باید پیگیری کنم؟ سه تا کد مختلف دارم.,Delivery Tracking,Customer Portal,Medium,Closed,2026-03-24 13:00,Enterprise,هر کد مربوط به یک بسته.
+T-070,نقشه مسیر پیک خالی است,صفحه tracking فقط loading می‌زنه.,Delivery Tracking,Mobile App,Low,Resolved,2026-03-24 20:15,Individual,مشکل CDN نقشه برطرف شد.
+T-071,محصول با تصویر سایت فرق دارد,رنگ دریافتی با عکس محصول یکی نیست.,Product,Web Platform,Medium,In Progress,2026-03-26 11:20,Individual,تعویض یا استرداد در حال بررسی.
+T-072,موجودی نمایش داده می‌شود ولی ناموجود است,موجود بود ولی موقع پرداخت گفت تموم شده.,Product,Web Platform,High,Resolved,2026-03-26 11:50,Individual,موجودی real-time sync اصلاح شد.
+T-073,مشخصات فنی محصول ناقص است,ولتاژ و ابعاد در صفحه محصول نیست.,Product,Web Platform,Low,Closed,2026-03-26 20:05,Business,اطلاعات از تأمین‌کننده دریافت شد.
+T-074,نظرات محصول نمایش داده نمی‌شوند,۵ نظر گذاشتم ولی هیچکدوم approve نشده.,Product,Web Platform,Low,Open,2026-03-28 15:00,Individual,نظرات در صف moderation.
+T-075,گارانتی محصول در فاکتور نیست,گارانتی ۱۸ ماهه بود ولی توی فاکتور ذکر نشده.,Product,Customer Portal,Medium,Resolved,2026-03-30 08:05,Individual,گواهی گارانتی جداگانه ارسال شد.
+T-076,محصول مشابه پیشنهاد نمی‌شود,بخش «محصولات مرتبط» خالی است.,Product,Web Platform,Low,Closed,2026-04-03 19:25,Individual,الگوریتم پیشنهاد به‌روز شد.
+T-077,SKU اشتباه ارسال شده,کد محصول فرق داره با چیزی که سفارش دادم.,Product,Customer Portal,High,In Progress,2026-04-04 18:40,Enterprise,تعویض SKU در انبار.
+T-078,قیمت محصول بعد خرید کم شد,دیروز خریدم، امروز ۲۰٪ ارزون‌تره.,Product,Customer Portal,Medium,Closed,2026-04-07 11:10,Individual,سیاست price match اعمال شد.
+T-079,دفترچه راهنما فارسی ندارد,فقط انگلیسی داخل جعبه بود.,Product,Web Platform,Low,Resolved,2026-04-09 12:10,Individual,PDF فارسی از سایت دانلود.
+T-080,محصول expire date نزدیک دارد,تاریخ انقضا ۲ هفته دیگه است.,Product,Customer Portal,High,Open,2026-04-09 13:15,Business,تعویض با batch جدید.
+T-081,جستجو نتیجه مرتبط نمی‌دهد,کلمه «لپ‌تاپ» را می‌زنم محصولات نامرتبط می‌آید.,Search,Web Platform,Medium,In Progress,2026-04-10 15:40,Individual,ایندکس جستجو در حال بازسازی.
+T-082,فیلتر قیمت کار نمی‌کند,بازه ۱ تا ۵ میلیون را زدم ولی همه قیمت‌ها می‌آید.,Search,Web Platform,Medium,Resolved,2026-04-10 20:10,Individual,باگ فیلتر Elasticsearch رفع شد.
+T-083,جستجوی فارسی نتیجه نمی‌دهد,با حروف فارسی چیزی پیدا نمی‌کنه، انگلیسی ok است.,Search,Web Platform,Medium,Open,2026-04-12 08:30,Business,normalization فارسی در حال بهبود.
+T-084,پیشنهاد خودکار (autocomplete) کند است,هر حرف ۳ ثانیه طول می‌کشه.,Search,Web Platform,Low,Closed,2026-04-12 12:35,Individual,کش autocomplete فعال شد.
+T-085,جستجو در موبایل با دسکتاپ فرق دارد,همون کلمه نتایج متفاوت.,Search,Mobile App,Medium,In Progress,2026-04-12 12:50,Individual,یکسان‌سازی ایندکس موبایل/وب.
+T-086,جستجوی صوتی کار نمی‌کند,مایک روشن می‌شه ولی متن تشخیص داده نمی‌شه.,Search,Mobile App,Low,Open,2026-04-12 17:35,Individual,پشتیبانی فارسی speech-to-text محدود.
+T-087,نتیجه جستجو صفحه سفید,بعد از enter صفحه خالی می‌شه.,Search,Web Platform,High,Resolved,2026-04-16 10:50,Individual,خطای API جستجو رفع شد.
+T-088,جستجوی برند خاص نتیجه ندارد,برند XYZ در سایت هست ولی search چیزی نمیاره.,Search,Web Platform,Medium,Closed,2026-04-17 12:05,Enterprise,نام برند به synonym map اضافه شد.
+T-089,مرتب‌سازی بر اساس قیمت اشتباه است,ارزان‌ترین اول نیست.,Search,Web Platform,Low,Resolved,2026-04-17 18:40,Individual,sort field اصلاح شد.
+T-090,جستجوی پیشرفته در دسترس نیست,گزینه advanced search حذف شده؟,Search,Web Platform,Low,Open,2026-04-17 18:50,Business,در نسخه جدید UI جابجا شده.
+T-091,داشبورد آمار اشتباه نشان می‌دهد,فروش امروز صفر نشون میده در حالی که سفارش داریم.,Dashboard,Dashboard,High,In Progress,2026-04-18 19:25,Business,تأخیر ETL داده فروش.
+T-092,نمودارها لود نمی‌شوند,صفحه dashboard فقط spinner می‌زنه.,Dashboard,Dashboard,Medium,Resolved,2026-04-20 15:55,Enterprise,سرویس charting ری‌استارت شد.
+T-093,گزارش PDF خروجی ناقص است,نیمی از جدول در PDF بریده شده.,Dashboard,Dashboard,Medium,Closed,2026-04-25 10:00,Business,تنظیمات page break اصلاح شد.
+T-094,فیلتر تاریخ کار نمی‌کند,بازه ماه گذشته را انتخاب می‌کنم داده امروز می‌آید.,Dashboard,Dashboard,Medium,Open,2026-04-25 13:30,Enterprise,timezone dashboard در حال اصلاح.
+T-095,ویجت سفارشی ذخیره نمی‌شود,layout را عوض می‌کنم بعد refresh برمی‌گرده.,Dashboard,Dashboard,Low,Resolved,2026-04-26 17:40,Business,localStorage conflict رفع شد.
+T-096,دسترسی به داشبورد فروش ندارم,مدیر گفته دسترسی دارم ولی 403 می‌گیرم.,Dashboard,Dashboard,High,In Progress,2026-04-27 16:55,Enterprise,نقش analytics به کاربر اضافه شد.
+T-097,داده real-time به‌روز نمی‌شود,آخرین بروزرسانی ۶ ساعت پیش نوشته.,Dashboard,Dashboard,Medium,Closed,2026-04-29 10:30,Business,WebSocket reconnect fix.
+T-098,Export Excel خطا می‌دهد,دانلود CSV timeout می‌شه.,Dashboard,Dashboard,Medium,Resolved,2026-04-29 17:20,Enterprise,limit export افزایش یافت.
+T-099,مقایسه دوره‌ها درست نیست,ماه به ماه اعداد منطقی نیست.,Dashboard,Dashboard,Medium,Open,2026-04-30 09:15,Business,باگ محاسبه YoY.
+T-100,داشبورد موبایل شلوغ است,روی گوشی قابل استفاده نیست.,Dashboard,Mobile App,Low,In Progress,2026-05-02 10:20,Individual,responsive layout در roadmap.
+T-101,ایمیل اطلاع‌رسانی نمی‌آید,تیک «دریافت ایمیل» فعاله ولی هیچ ایمیلی نمی‌گیرم.,Notification,Customer Portal,Medium,Resolved,2026-05-06 11:35,Individual,ایمیل در suppression list بود.
+T-102,پیامک سفارش دیر می‌رسد,SMS بعد از تحویل بسته رسید.,Notification,Mobile App,Medium,Closed,2026-05-08 11:30,Individual,تأخیر queue SMS.
+T-103,نوتیفیکیشن push تکراری,برای یک رویداد ۵ بار notification می‌آد.,Notification,Mobile App,Low,Resolved,2026-05-12 14:50,Individual,deduplication rule اضافه شد.
+T-104,اعلان‌ها خاموش نمی‌شوند,همه را off کردم ولی still می‌آد.,Notification,Mobile App,Medium,In Progress,2026-05-13 16:10,Individual,تنظیمات sync موبایل/سرور.
+T-105,ایمیل به زبان اشتباه,زبان فارسی انتخاب کردم ولی ایمیل انگلیسی می‌آید.,Notification,Customer Portal,Low,Closed,2026-05-14 09:50,Business,locale preference اصلاح شد.
+T-106,webhook notification fail,Endpoint ما 500 می‌گیره.,Notification,Customer Portal,High,Open,2026-05-14 15:20,Enterprise,retry policy webhook بررسی.
+T-107,خلاصه هفتگی ارسال نمی‌شود,۲ هفته است weekly digest نیامده.,Notification,Customer Portal,Low,Resolved,2026-05-15 15:05,Individual,job scheduler fix.
+T-108,اعلان سفارش برای کاربر اشتباه,سفارش همکارم برای من notification آمده.,Notification,Customer Portal,High,In Progress,2026-05-18 13:20,Enterprise,bug routing notification.
+T-109,صدای notification کار نمی‌کند,توی تنظیمات گوشی ok ولی silent می‌آد.,Notification,Mobile App,Low,Closed,2026-05-20 08:50,Individual,channel importance Android fix.
+T-110,لینک داخل ایمیل منقضی است,روی «مشاهده سفارش» کلیک می‌کنم expired.,Notification,Customer Portal,Medium,Resolved,2026-05-20 12:40,Individual,TTL لینک magic افزایش یافت.
+T-111,اپ کرش می‌کند موقع باز کردن,بعد از آپدیت آخر، اپ اصلاً باز نمی‌شه.,Mobile App,Mobile App,Critical,Resolved,2026-05-22 11:40,Individual,hotfix نسخه ۳.۲.۱ منتشر شد.
+T-112,ورود اثرانگشت کار نمی‌کند,Face ID ok ولی fingerprint error می‌ده.,Mobile App,Mobile App,Medium,Open,2026-05-23 20:40,Individual,مشکل Samsung Knox.
+T-113,سبد خرید sync نمی‌شود,روی وب اضافه کردم، توی اپ نیست.,Mobile App,Mobile App,High,In Progress,2026-05-24 08:25,Individual,cart sync service.
+T-114,اپ خیلی کند است,هر صفحه ۱۰ ثانیه لود می‌شه.,Mobile App,Mobile App,High,Resolved,2026-05-24 14:15,Business,بهینه‌سازی image cache.
+T-115,دانلود فاکتور در اپ ممکن نیست,دکمه download کار نمی‌کنه.,Mobile App,Mobile App,Medium,Closed,2026-05-26 10:20,Individual,permission storage fix.
+T-116,نسخه iOS قدیمی پشتیبانی نمی‌شود,iPhone 8 اپ را update نمی‌تونه.,Mobile App,Mobile App,Low,Open,2026-05-26 12:50,Individual,حداقل iOS 15.
+T-117,اعلان deep link کار نمی‌کند,روی notification کلیک می‌کنم صفحه اشتباه باز می‌شه.,Mobile App,Mobile App,Medium,In Progress,2026-05-28 16:20,Individual,routing deep link fix.
+T-118,کیبورد روی input می‌ماند,بعد از جستجو keyboard بسته نمی‌شه.,Mobile App,Mobile App,Low,Resolved,2026-05-29 09:05,Individual,UI bug fix.
+T-119,حالت offline کار نمی‌کند,بدون اینternet باید سفارش‌های قبلی را ببینم.,Mobile App,Mobile App,Medium,Open,2026-06-02 12:00,Business,offline cache در development.
+T-120,آپدیت از استور نصب نمی‌شود,Google Play error 963.,Mobile App,Mobile App,High,Closed,2026-06-02 17:00,Individual,پاک کردن cache store.
+T-121,نمی‌توانم پروفایل را ویرایش کنم,دکمه save کار نمی‌کنه.,Account,Customer Portal,Medium,Resolved,2026-06-03 16:10,Individual,validation field mobile fix.
+T-122,حذف حساب کاربری ممکن نیست,گزینه delete account وجود نداره.,Account,Customer Portal,Medium,In Progress,2026-06-05 14:00,Individual,GDPR delete flow.
+T-123,دو حساب با یک ایمیل,سیستم گفته ایمیل تکراری ولی من فقط یک حساب می‌شناسم.,Account,Customer Portal,High,Resolved,2026-06-06 09:30,Individual,حساب duplicate merge.
+T-124,تغییر شماره موبایل verify نمی‌شود,کد OTP برای شماره جدید نمی‌آد.,Account,Customer Portal,High,Open,2026-06-06 09:50,Individual,SMS provider issue.
+T-125,آواتار آپلود نمی‌شود,عکس بیش از ۲MB error می‌ده با اینکه ۵۰۰KB است.,Account,Customer Portal,Low,Closed,2026-06-08 12:00,Individual,compression server-side.
+T-126,تاریخ تولد ذخیره نمی‌شود,هر بار خالی برمی‌گرده.,Account,Customer Portal,Low,Resolved,2026-06-09 11:10,Individual,date format locale bug.
+T-127,حساب Business به Individual تبدیل شد,بدون درخواست من نوع حساب عوض شده.,Account,Customer Portal,High,In Progress,2026-06-12 09:30,Business,migration script rollback.
+T-128,لینک دعوت دوستان کار نمی‌کند,referral code invalid.,Account,Customer Portal,Medium,Closed,2026-06-12 13:45,Individual,کد جدید generate.
+T-129,تنظیمات حریم خصوصی reset شده,همه preferences برگشته default.,Account,Customer Portal,Medium,Open,2026-06-15 08:15,Individual,database migration side effect.
+T-130,امکان اتصال حساب بانکی نیست,IBAN verify fail.,Account,Customer Portal,High,Resolved,2026-06-16 13:10,Business,فرمت شبا اصلاح.
+T-131,اشتراک renew نشده,تاریخ تمدید گذشته ولی هنوز active نشون میده.,Subscription,Customer Portal,High,In Progress,2026-06-16 14:20,Business,payment method expired.
+T-132,لغو اشتراک اعمال نشده,cancel زدم ولی هنوز charge می‌شه.,Subscription,Customer Portal,Critical,Open,2026-06-17 09:00,Individual,subscription cancel queue.
+T-133,ارتقا plan انجام نشده,پول premium کسر شده plan عوض نشده.,Subscription,Customer Portal,High,Resolved,2026-06-19 09:00,Enterprise,webhook billing fix.
+T-134,فاکتور اشتراک ماهانه نادرست,مبلغ با plan selected فرق داره.,Subscription,Customer Portal,Medium,Closed,2026-06-19 12:35,Business,proration explain.
+T-135,trial زودتر تمام شده,۷ روز trial بود، ۳ روزه قطع شد.,Subscription,Customer Portal,High,In Progress,2026-06-22 15:40,Individual,trial clock bug.
+T-136,coupon اشتراک کار نمی‌کند,کد ۵۰٪ invalid.,Subscription,Customer Portal,Medium,Resolved,2026-06-22 17:45,Individual,کد one-time already used.
+T-137,دسترسی premium بعد downgrade,plan را پایین آوردم ولی features premium فعاله.,Subscription,Customer Portal,Medium,Open,2026-06-23 19:35,Business,grace period 24h.
+T-138,invoice subscription download fail,PDF billing error.,Subscription,Customer Portal,Low,Closed,2026-06-25 12:55,Enterprise,invoice service fix.
+T-139,تعداد seat اشتباه charge شده,۵ user داریم ۱۰ seat bill.,Subscription,Customer Portal,High,In Progress,2026-06-28 11:50,Enterprise,seat count audit.
+T-140,pause subscription option نیست,می‌خوام ۲ ماه pause کنم.,Subscription,Customer Portal,Low,Open,2026-06-29 13:00,Individual,feature request logged.
+T-141,دسترسی به بخش گزارشات ندارم,همکارم می‌بینه من نه.,Access,Dashboard,High,Resolved,2026-06-29 18:20,Enterprise,permission report-view add.
+T-142,invite team member کار نمی‌کند,ایمیل دعوت ارسال نمی‌شه.,Access,Customer Portal,Medium,In Progress,2026-06-30 16:15,Business,SMTP rate limit.
+T-143,نقش admin اشتباه assign شده,باید viewer باشم admin شدم.,Access,Customer Portal,Critical,Resolved,2026-07-02 14:25,Enterprise,role corrected.
+T-144,IP whitelist دسترسی را block کرد,از دفتر وارد نمی‌شیم.,Access,Web Platform,Critical,Open,2026-07-04 14:40,Enterprise,IP range update.
+T-145,SSO login redirect loop,SAML assertion fail.,Access,Web Platform,Critical,In Progress,2026-07-07 13:15,Enterprise,IdP metadata sync.
+T-146,API key revoked بدون اطلاع,یک‌شبه key کار نمی‌کنه.,Access,Customer Portal,High,Closed,2026-07-07 18:55,Enterprise,key rotation notice.
+T-147,محدودیت تعداد session,تیم ۱۰ نفره نمی‌تونه همزمان login.,Access,Web Platform,Medium,Open,2026-07-08 09:50,Business,concurrent seat limit.
+T-148,دسترسی guest expire نشده,مهمان باید قطع شده باشه.,Access,Customer Portal,Medium,Resolved,2026-07-09 17:45,Enterprise,guest TTL job fix.
+T-149,فایل share link عمومی شده,لینک private بود public شده.,Access,Customer Portal,Critical,In Progress,2026-07-10 15:40,Enterprise,ACL audit.
+T-150,دسترسی ماژول billing,tab billing grey out.,Access,Customer Portal,Medium,Closed,2026-07-12 16:00,Business,billing role assign.
+T-151,export داده CSV خالی است,فایل دانلود می‌شه ولی فقط header داره.,Data Export,Dashboard,High,Resolved,2026-07-13 12:15,Enterprise,export query filter fix.
+T-152,درخواست export گیر کرده,۳ ساعته pending.,Data Export,Customer Portal,Medium,In Progress,2026-07-13 15:40,Business,export queue stuck.
+T-153,فرمت export JSON ناقص,نیمی از records missing.,Data Export,Dashboard,High,Open,2026-07-15 10:15,Enterprise,pagination export bug.
+T-154,GDPR data export,می‌خوام همه داده‌هام رو بگیرم.,Data Export,Customer Portal,Medium,Closed,2026-07-15 13:00,Individual,package within 30 days.
+T-155,export بزرگ timeout,۱۰۰هزار رکورد export fail.,Data Export,Dashboard,High,Resolved,2026-07-15 17:30,Enterprise,async export job.
+T-156,ستون تاریخ اشتباه format,dates in export wrong timezone.,Data Export,Dashboard,Medium,Closed,2026-07-17 08:05,Business,UTC label add.
+T-157,export history delete,لیست exportهای قبلی پاک شده.,Data Export,Customer Portal,Low,Open,2026-07-17 19:55,Individual,retention policy.
+T-158,Excel export encoding فارسی,حروف فارسی broken در Excel.,Data Export,Dashboard,Medium,Resolved,2026-07-20 10:10,Business,UTF-8 BOM add.
+T-159,scheduled export اجرا نشده,هر شب باید email بیاد.,Data Export,Dashboard,Medium,In Progress,2026-07-20 18:25,Enterprise,cron job fail.
+T-160,export filter save نمی‌شود,saved filter gone after logout.,Data Export,Dashboard,Low,Closed,2026-07-21 10:50,Business,persist filter DB.
+T-161,اتصال Shopify قطع شده,sync سفارش‌ها stop شده.,Integration,Customer Portal,Critical,In Progress,2026-07-21 12:05,Enterprise,OAuth token refresh.
+T-162,webhook به CRM نمی‌رسد,Lead create نمی‌شه.,Integration,Customer Portal,High,Open,2026-07-24 14:50,Business,webhook URL SSL.
+T-163,API rate limit خیلی پایین,integration ما throttle می‌شه.,Integration,Customer Portal,High,In Progress,2026-07-26 18:30,Enterprise,rate limit increase request.
+T-164,Zapier zap fail,step 3 error always.,Integration,Customer Portal,Medium,Resolved,2026-07-28 09:15,Business,field mapping update.
+T-165,Accounting export duplicate,فاکتورها دوبار sync.,Integration,Dashboard,High,Closed,2026-07-30 14:15,Enterprise,idempotency key.
+T-166,Slack notification format broken,markdown render wrong.,Integration,Customer Portal,Low,Resolved,2026-07-30 16:05,Business,slack block kit update.
+T-167,ERP stock mismatch,موجودی ERP با shop فرق.,Integration,Customer Portal,Critical,Open,2026-07-31 08:10,Enterprise,inventory sync lag.
+T-168,Google Analytics tracking gap,conversion not recorded.,Integration,Web Platform,Medium,In Progress,2026-08-01 09:40,Business,GA4 event config.
+T-169,Payment gateway sandbox in prod,test mode transactions.,Integration,Checkout,Critical,Resolved,2026-08-02 16:20,Enterprise,env variable fix.
+T-170,Custom API docs outdated,endpoint 404 in docs.,Integration,Customer Portal,Low,Closed,2026-08-07 08:05,Enterprise,docs regenerate.
+T-171,سایت خیلی کند لود می‌شود,homepage ۱۵ ثانیه.,Performance,Web Platform,High,In Progress,2026-08-10 10:05,Individual,CDN cache miss.
+T-172,timeout موقع checkout,payment page hang.,Performance,Checkout,Critical,Resolved,2026-08-11 11:05,Individual,DB connection pool.
+T-173,API response 30s,dashboard API slow.,Performance,Dashboard,High,Open,2026-08-12 15:15,Enterprise,query optimization.
+T-174,memory leak in mobile app,after 1 hour app sluggish.,Performance,Mobile App,High,In Progress,2026-08-13 08:50,Individual,profiler investigation.
+T-175,search timeout,complex query 504.,Performance,Web Platform,Medium,Closed,2026-08-13 11:30,Business,search timeout increase.
+T-176,image load lazy broken,above fold images delay.,Performance,Web Platform,Medium,Resolved,2026-08-14 10:10,Individual,lazy load threshold.
+T-177,peak traffic 503,Black Friday errors.,Performance,Web Platform,Critical,Closed,2026-08-14 19:15,Enterprise,auto-scale add capacity.
+T-178,report generation 10 min,monthly report too slow.,Performance,Dashboard,Medium,Open,2026-08-16 17:30,Enterprise,materialized view.
+T-179,websocket disconnect frequent,live updates drop.,Performance,Dashboard,Medium,In Progress,2026-08-17 12:10,Business,heartbeat interval.
+T-180,database lock timeout,concurrent order fail.,Performance,Checkout,High,Resolved,2026-08-17 17:05,Enterprise,transaction isolation.
+T-181,فعالیت مشکوک در حساب,login از کشور دیگر.,Security,Customer Portal,Critical,Resolved,2026-08-18 09:15,Individual,password reset force + 2FA.
+T-182,ایمیل فیشینگ با برند شما,ایمیل جعلی refund.,Security,Customer Portal,High,Closed,2026-08-18 14:00,Individual,official domain educate.
+T-183,رمز در breach list,Have I Been Pwned alert.,Security,Web Platform,Critical,In Progress,2026-08-19 14:45,Individual,mandatory password change.
+T-184,session hijack suspected,settings changed not by me.,Security,Customer Portal,Critical,Open,2026-08-19 16:20,Individual,invalidate all sessions.
+T-185,API key exposed in GitHub,public repo leak.,Security,Customer Portal,Critical,Resolved,2026-08-21 16:05,Enterprise,key rotate + revoke.
+T-186,CAPTCHA bypass attempts,bot login surge.,Security,Web Platform,High,In Progress,2026-08-22 17:30,Business,WAF rule tighten.
+T-187,SSL certificate expiring,browser warning.,Security,Web Platform,Critical,Resolved,2026-08-23 13:15,Enterprise,cert auto-renew fix.
+T-188,permission escalation bug report,viewer saw admin panel briefly.,Security,Dashboard,Critical,Open,2026-08-24 08:05,Enterprise,security patch deploy.
+T-189,malware in uploaded file,virus scan alert.,Security,Customer Portal,High,Closed,2026-08-24 08:10,Business,upload quarantine.
+T-190,audit log missing entries,compliance gap.,Security,Dashboard,High,In Progress,2026-08-28 08:45,Enterprise,audit pipeline fix.
+T-191,پاسخ تیکت خیلی دیر رسید,۵ روز بدون پاسخ.,Customer Support,Customer Portal,Medium,Closed,2026-08-30 20:15,Individual,SLA breach apology + priority.
+T-192,چت آنلاین همیشه offline,never available.,Customer Support,Web Platform,Medium,Open,2026-08-31 18:05,Individual,staffing hours expand.
+T-193,تیکت duplicate شد,same issue two tickets.,Customer Support,Customer Portal,Low,Resolved,2026-09-01 18:50,Individual,tickets merged.
+T-194,پاسخ boilerplate irrelevant,copy paste answer.,Customer Support,Customer Portal,Medium,In Progress,2026-09-02 10:20,Business,agent retraining.
+T-195,تماس تلفنی برنگشت,callback requested.,Customer Support,Customer Portal,High,Closed,2026-09-03 19:10,Individual,callback completed.
+T-196,رضایت‌سنجی کار نمی‌کند,survey link broken.,Customer Support,Customer Portal,Low,Resolved,2026-09-06 19:55,Individual,survey URL fix.
+T-197,پشتیبانی فارسی ضعیف,agent English only.,Customer Support,Customer Portal,Medium,Open,2026-09-07 19:40,Individual,Farsi team assign.
+T-198,escalation to manager,issue unresolved 2 weeks.,Customer Support,Customer Portal,High,In Progress,2026-09-07 20:25,Enterprise,manager review.
+T-199,KB article outdated,help doc wrong steps.,Customer Support,Web Platform,Low,Closed,2026-09-08 11:40,Individual,article update.
+T-200,support portal login separate,another password needed.,Customer Support,Customer Portal,Medium,Resolved,2026-09-12 12:10,Business,SSO for support portal.

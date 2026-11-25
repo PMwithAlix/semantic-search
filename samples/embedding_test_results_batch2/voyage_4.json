@@ -1,0 +1,12 @@
+{
+  "display_name": "Voyage 4",
+  "status": "error",
+  "model_candidates": [
+    "voyage-4",
+    "voyage-4-large",
+    "voyage-4-lite"
+  ],
+  "error": "{\n  \"error\": {\n    \"message\": \"Requested resource voyage-4-lite does not exist. for more information check https://ava.al/limits . Please contact support at support@avalai.ir and include the request ID 01a09296-e60f-79d2-a7bf-3b8a265fd197 in your email if you believe this is an error.\",\n    \"type\": \"not_found\",\n    \"param\": null,\n    \"code\": \"resource_not_found\",\n    \"solution\": \"Please check https://ava.al/limits\",\n    \"request_id\": \"01a09296-e60f-79d2-a7bf-3b8a265fd197\"\n  }\n}",
+  "elapsed_seconds": 4.5,
+  "created_at": "2026-09-11T22:29:18.833170+00:00"
+}

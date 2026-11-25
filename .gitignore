@@ -1,0 +1,41 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Uploaded datasets (keep directory)
+uploads/*
+!uploads/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.python-version
+
+# Node / frontend build
+node_modules/
+project/node_modules/
+project/dist/
+*.tsbuildinfo
+
+# Docker / database volume leftovers
+pgdata/
+
+# Logs and OS
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors and scaffolding leftovers
+.idea/
+.vscode/
+*.swp
+project/.bolt/
